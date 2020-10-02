@@ -99,7 +99,34 @@ body {
     width: 150px;
 }
 
-/* CSS MEDIA QUERY */
-@media screen and (min-width: 640px) and (max-width: 1024px) {
+.top-bar-right .fa.fa-bars {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+
+/* CSS MEDIA QUERY */
+@media screen and (min-width: 993px) {
+    .top-bar-right .fa.fa-bars {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container.bottom-header .text1 {
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container.bottom-header {
+        height: 430px;
+    }
+
+    .container.bottom-header .text1 {
+        font-size: 36px;
+    }
 }
