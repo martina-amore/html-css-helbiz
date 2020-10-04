@@ -224,6 +224,10 @@ body {
         font-size: 36px;
     }
 
+    .container.bottom-header {
+        height: 430px;
+    }
+
     .text-image2 {
         margin-top: 35px;
     }
