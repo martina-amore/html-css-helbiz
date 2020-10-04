@@ -2,16 +2,14 @@
     height: 80px;
 }
 
-.container {
-    max-width: 100%;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 600;
 }
 
+
+/* HEADER */
 .container.top-header {
     line-height: 80px;
 }
@@ -67,7 +65,7 @@ body {
     background-image: url("../img/hero-bg.jpg");
     background-repeat: none;
     background-size: cover;
-    width: 100%;
+    max-width: 100%;
     height: 554px;
 }
 
@@ -106,6 +104,89 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* MAIN 1° SECTION TOP*/
+.container.top-main {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.container.top-main img {
+    height: 300px;
+    width: 450px;
+}
+
+.text-image1, .text-image2 {
+    background-color: #fafafa;
+    display: inline-block;
+    padding: 60px 50px;
+}
+
+.container.top-main .text1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.container.top-main .text2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.container.top-main .text3 a {
+    text-decoration: none;
+    font-size: 16px;
+    color: blue;
+}
+
+.container.top-main .text3 {
+    margin-bottom: 25px;
+}
+
+/* MAIN 2° SECTION CENTRAL*/
+.container.central-main1  {
+    background-image: url("../img/man.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+}
+
+.container.central-main2 .col-lg-4  {
+    position: relative;
+}
+
+.container.central-main2 {
+    height: 300px;
+}
+
+.container.central-main1 img {
+    margin-top: 140px;
+    height: 550px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container.central-main2 .texts1,
+.container.central-main2 .texts2 {
+    margin-top: 120px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container.central-main2 .text1 {
+    font-size: 28px;
+}
+
+.container.central-main2 .text2 {
+    font-size: 16px;
+}
 
 /* CSS MEDIA QUERY */
 @media screen and (min-width: 993px) {
@@ -118,15 +199,41 @@ body {
     .container.bottom-header .text1 {
         font-size: 36px;
     }
-}
 
-
-@media screen and (max-width: 768px) {
-    .container.bottom-header {
-        height: 430px;
+    .container.top-main img {
+        height: 200px;
+        width: 350px;
     }
 
+    .text-image1, .text-image2 {
+        padding: 60px 20px;
+    }
+
+    .container.central-main1 .texts1,
+    .container.central-main2 .texts2 {
+        /* position: relative; */
+        /* top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+
+}
+
+@media screen and (max-width: 768px) {
     .container.bottom-header .text1 {
         font-size: 36px;
+    }
+
+    .text-image2 {
+        margin-top: 35px;
+    }
+
+    .container.top-main img {
+        height: 200px;
+        width: 350px;
+    }
+
+    .text-image1, .text-image2 {
+        padding: 40px 20px;
     }
 }
